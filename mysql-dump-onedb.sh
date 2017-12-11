@@ -24,9 +24,9 @@ DATABASES=`mysql -u $DB_USER -p$DB_PASSWD -e 'show databases' -s --skip-column-n
 COMMAND01="--single-transaction --quick --lock-tables=false"
 
 # Title and Version
-echo "*-------------------------------*"
-echo "*  MySQL Dump-onedb V-20171208  *"
-echo "*-------------------------------*"
+echo "*-----------------------------------*"
+echo "*    MySQL Dump-onedb V-20171208    *"
+echo "*-----------------------------------*"
 echo "Server Name: "$SERVERHOSTNAME "IP="$SERVERIP
 echo "Starting script in: "$adate
 echo ""
@@ -62,6 +62,6 @@ echo "Your Disk space !!! is:"
 df -h
 echo ""
 
-export bdate=$(date +%Y-%m-%d_%H:%M:%S)      # Info for end time
+bdate=$(date +%Y-%m-%d_%H:%M:%S)          # Info for end time
 echo "Job  Start  in:     "$adate
-echo "All Done! End time: "$bdate            # Just to know how long it took
+echo "All Done! End time: "$bdate         # Just to know how long it took
